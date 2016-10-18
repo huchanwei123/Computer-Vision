@@ -6,10 +6,6 @@
 
 # Project 1: Image Filtering and Hybrid Images
 
-## Brief
-* Due: Oct. 19
-* Required files: results/index.md, and code/
-
 ##Overview
 
 <p>The goal of this assignment is to write an image filtering function and use it to create <a href="http://cvcl.mit.edu/hybridimage.htm">hybrid images</a> using a simplified version of the SIGGRAPH 2006 <a href="http://cvcl.mit.edu/publications/OlivaTorralb_Hybrid_Siggraph06.pdf">paper</a> by Oliva, Torralba, and Schyns.
