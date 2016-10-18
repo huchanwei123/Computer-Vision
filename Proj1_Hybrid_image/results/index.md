@@ -4,7 +4,7 @@
 
 ## Overview
 The project is related to 
-> Image filtering, 2D-convolution
+> Image filtering, 2D-convolution, Hybrid Image
 
 ## Implementation
 1. Implement my own filtering function in my_imfilter.m
@@ -92,3 +92,6 @@ Pseudo code:
 </tr>
 
 </table>
+
+## Reference
+[Hybrid Image](http://cvcl.mit.edu/publications/OlivaTorralb_Hybrid_Siggraph06.pdf)
