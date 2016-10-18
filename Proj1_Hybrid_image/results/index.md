@@ -101,6 +101,16 @@ Pseudo code:
 </td>
 </tr>
 
+<tr>
+<td>
+<img src="yao.jpg" width="150%"/></td>
+<td>
+<img src="yi.jpg"  width="150%"/></td>
+<td>
+<img src="yao_and_yi.jpg" width="200%"/>
+</td>
+</tr>
+
 </table>
 
 ## Reference
