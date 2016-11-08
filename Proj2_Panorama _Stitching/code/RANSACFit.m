@@ -99,6 +99,12 @@ function dists = ComputeError(H, pt1, pt2, match)
     % confusing, but understanding it will make your code simple and fast.)
     dists = zeros(size(match,1),1);
 
+    for i = 1: size(match,1) 
+        P1 = [pt1(match(i,1),:) 1]';
+        P1_onP2 = (H * P1)';
+        pt1_onP2 = P1_onP2(1:2);
+        dists(i) = sqrt(sum((pt1_onP2 - pt2(match(i,2),:)).^2));
+    end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                                              %
 %                                 END YOUR CODE                                %

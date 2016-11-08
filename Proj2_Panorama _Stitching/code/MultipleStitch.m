@@ -174,7 +174,17 @@ function T = makeTransformToReferenceFrame(i_To_iPlusOne_Transform, currentFrame
 % refFrameIndex (this is the harder case).
 
 % HINT 2: You can use the pinv function to invert a transformation.
-
+T=eye(3);
+    
+if(currentFrameIndex<refFrameIndex)
+    for i=currentFrameIndex:refFrameIndex-1
+        T=i_To_iPlusOne_Transform{i}*T;
+    end
+else
+    for i=currentFrameIndex-1:-1:refFrameIndex
+        T=pinv(i_To_iPlusOne_Transform{i})*T;
+    end
+end  
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
