@@ -17,15 +17,15 @@ The project is related to Image stitching
 	
 2. Implementation Details
     * First, we will use the function `vl_sift` in VLFeat Matlab to find the image descriptor, just simply use it! As following:
-	
-            [f, descriptor] = vl_sift(Image);
-
+	    
+              [f, descriptor] = vl_sift(Image);
+            
     * Then we match one set of SIFT descriptors (descriptor1) to another set of descriptors (decriptor2). Using Euclidean distance as following:
 	
 	    <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dc0281a964ec758cca02ab9ef91a7f54ac00d4b7" width="50%"/>
 
-          And my implementation is as following code:
-	  	      
+      And my implementation is as following code:
+	      	      
               N1 = size(descriptor1, 1);
               N2 = size(descriptor2, 1);
               col = size(descriptor1, 2);
@@ -103,7 +103,7 @@ The project is related to Image stitching
 
 <tr>
 <td>
-<img src="Hanging.png"/>
+<img src="Hanging.png" width="60%" height="50%"/>
 </td>
 </tr>
 </table>
