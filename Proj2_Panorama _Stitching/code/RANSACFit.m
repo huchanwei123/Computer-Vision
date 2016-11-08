@@ -101,9 +101,9 @@ function dists = ComputeError(H, pt1, pt2, match)
 
     for i = 1: size(match,1) 
         P1 = [pt1(match(i,1),:) 1]';
-        P1_onP2 = (H * P1)';
-        pt1_onP2 = P1_onP2(1:2);
-        dists(i) = sqrt(sum((pt1_onP2 - pt2(match(i,2),:)).^2));
+        P1_ = (H * P1)';
+        pt1_ = P1_(1:2);
+        dists(i) = sqrt(sum((pt1_ - pt2(match(i,2),:)).^2));
     end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                                              %
