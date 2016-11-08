@@ -65,7 +65,7 @@ The project is related to Image stitching
 	
     * After we finish above, we can run `TransformationTester.m` to stitch two related images! Refer to 'My Result ---> Stitch two images!
     
-    * Finally, I worked on stitching multiple images which is stitching in ordered sequence(IMPORTANT! MUST be ordered), my code is as following:
+    * Finally, I worked on stitching multiple images which is stitching in ordered sequence(IMPORTANT! MUST be ordered). I choose a reference image, and then use Affine transform to transform each coordinate to reference coordinate. My code is as following:
      
               T=eye(3);  
               if(currentFrameIndex<refFrameIndex)
