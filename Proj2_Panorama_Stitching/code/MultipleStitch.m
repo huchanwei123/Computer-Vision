@@ -180,6 +180,8 @@ if(currentFrameIndex<refFrameIndex)
     for i=currentFrameIndex:refFrameIndex-1
         T=i_To_iPlusOne_Transform{i}*T;
     end
+elseif(currentFrameIndex == refFrameIndex)
+    T = eye(3);
 else
     for i=currentFrameIndex-1:-1:refFrameIndex
         T=pinv(i_To_iPlusOne_Transform{i})*T;
