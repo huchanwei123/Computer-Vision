@@ -2,8 +2,8 @@
 clc; close all; clc;
 
 %% Load image
-img1 = imread('../data/uttower1.jpg');
-img2 = imread('../data/uttower2.jpg');
+img1 = imread('../data/desktop1.jpg');
+img2 = imread('../data/desktop2.jpg');
 
 %% Feature detection
 I = single(rgb2gray(img1));
@@ -27,7 +27,7 @@ minInliersForAcceptance = ceil(0.3 * size(M, 1));
 H = RANSACFit(pointsInImage1, pointsInImage2, M, maxIter, seedSetSize, maxInlierErrorPixels, minInliersForAcceptance);
 
 %% Make Panoramic image
-saveFileName = 'uttower_pano.jpg';
+saveFileName = 'desktop.jpg';
 PairStitch(img1, img2, H, saveFileName);
-disp(['Panorama was saved as uttower_pano.jpg' saveFileName]);
+disp(['Panorama was saved as desktop.jpg' saveFileName]);
 imshow(imread(saveFileName));
