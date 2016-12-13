@@ -95,7 +95,7 @@ The project is related to
                 cur_image_ids = [cur_image_ids; curscale_image_ids];
         end
 
-5. The histogram of oriented gradients (HOG) is a feature descriptor used in computer vision and image processing for the purpose of object detection. **I also implement my own HoG estimation (I take CellSize = 6 and BlockSize = 2 for example)**, but I just get the feature without visualize it. The flow diagram and the code(refer to [here](https://github.com/huchanwei123/homework4/blob/master/code/My_HoG.m)) of finding HoG description is as following:
+5. The histogram of oriented gradients (HOG) is a feature descriptor used in computer vision and image processing for the purpose of object detection. **I also implement my own HoG estimation (I take CellSize = 6 and BlockSize = 2 for example)**, but I just get the feature without visualize it. The flow diagram and the code(refer to [here](https://github.com/huchanwei123/Computer-Vision/blob/master/Proj4_Face_Recognition/code/My_HoG.m)) of finding HoG description is as following:
 
 <img src="HoG_flow.png" ,height = "50%", width="50%">
 
